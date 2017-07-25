@@ -1,3 +1,6 @@
-#!/usr/bin/env python3
 
-print("hello")
+
+with open("vidData.txt", "r") as f:
+    for line in f:
+        print(repr(line))
+        break

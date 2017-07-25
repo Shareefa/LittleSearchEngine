@@ -16,9 +16,9 @@ PROJECT_DIR = "/Users/abdullah/Documents/LittleSearchEngine"
 KAFolder = os.path.join(PROJECT_DIR, "KAVids")
 
 vidList = os.listdir(KAFolder)
-
+print(vidList)
 idList = []
-
+sys.exit()
 for vid in vidList:
     idList.append(vid[-15:-4])
 
