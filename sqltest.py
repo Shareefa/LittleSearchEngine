@@ -10,13 +10,13 @@ conn = pymysql.connect(
 
 cur = conn.cursor()
 
-cur.execute("SELECT title from files")
+cur.execute("SELECT title, id from files")
 print (cur.description)
 
 num = 0
 
-while num < 10:
-    res = cur.fetchone()
+while num < 2:
+    res = cur.fetchall()
     print(res)
     num = num + 1
 
