@@ -10,7 +10,7 @@ conn = pymysql.connect(
 
 cur = conn.cursor()
 
-cur.execute("SELECT title, id from files")
+cur.execute("SELECT  id title keywords from files")
 print (cur.description)
 
 num = 0
